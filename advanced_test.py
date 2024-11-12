@@ -3,10 +3,13 @@ def create_squares_of_evens():
     Task:
     - Create a list of squares for all even numbers from 1 to 20 using list comprehension.
     
+    
     Return:
     - The list of squares of even numbers.
     """
-    pass
+    even_list = [x * x for x in range(1, 11) if x % 2 == 0]
+    return even_list
+
 
 
 def convert_to_dict(students):
@@ -17,7 +20,7 @@ def convert_to_dict(students):
     Return:
     - The dictionary created from the list of students.
     """
-    pass
+    return dict(students)
 
 
 def access_value_x(nested):
@@ -28,7 +31,8 @@ def access_value_x(nested):
     Return:
     - The value of 'x' (which is 10).
     """
-    pass
+    
+    return nested['c']['x']
 
 
 def append_to_list_in_dict(nested):
@@ -39,7 +43,9 @@ def append_to_list_in_dict(nested):
     Return:
     - The updated dictionary.
     """
-    pass
+    nested['a'].append(6)
+    return nested
+    
 
 
 def convert_tuple_to_list_and_append(nested):
@@ -50,4 +56,6 @@ def convert_tuple_to_list_and_append(nested):
     Return:
     - The updated dictionary.
     """
-    pass
+    nested['b'] = list(nested['b'])
+    nested['b'].append(6)
+    return nested
